@@ -1,0 +1,120 @@
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.cover {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.context {
+  flex: 2;
+  padding: 2rem;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.background-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: norsebold;
+  src: url(Norsebold.otf);
+}
+
+.logo-banner {
+  position: absolute;
+  width: 100%;
+
+  top: 150px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo-banner h1 {
+  font-family: norsebold, sans-serif;
+  color: white;
+  font-size: 5rem;
+}
+
+.cover span {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+button {
+  background-color: rgb(46, 110, 46);
+  color: white;
+  max-width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 1 0.5px;
+}
+
+a {
+  color: rgb(46, 110, 46);
+  text-decoration: none;
+}
+
+input {
+  border: 1px solid rgb(63, 63, 63);
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input:user-invalid {
+  border-color: red;
+}
+
+input:user-valid {
+  border-color: green;
+}
+
+.form {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: rgb(58, 58, 58);
+  font-size: 0.8rem;
+}
